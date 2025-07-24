@@ -11,10 +11,46 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1 {
-  font-size: 4rem;
+.input-group {
+  margin: 20px 0;
+  position: relative;
+}
+
+.input-group label {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 15px;
+  font-size: 1rem;
+  pointer-events: none;
+  padding: 0 5px;
+  transition: 0.3s;
+}
+
+.input-group input {
+  width: 360px;
+  height: 60px;
+  font-size: 1rem;
+  padding: 0 15px;
+  border: 1.2px solid white;
+  background: transparent;
+  outline: none;
+  border-radius: 16px;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+  top: 0;
+  background-color: #121212;
+  font-size: 0.8rem;
+}
+
+.debug {
+  border: 1px solid darkred;
+  padding: 2px;
 }
