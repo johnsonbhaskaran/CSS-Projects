@@ -54,3 +54,18 @@ body {
   border: 1px solid darkred;
   padding: 2px;
 }
+
+.submit {
+  width: 450px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 30px;
+  background: #121212;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.submit:hover {
+  background: red;
+  transform: scale(1.03);
+}
