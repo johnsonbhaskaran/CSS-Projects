@@ -38,3 +38,7 @@
     transform: translateX(-50%);
   }
 }
+
+.carousel-container:hover .carousel-track {
+  animation-play-state: paused;
+}
