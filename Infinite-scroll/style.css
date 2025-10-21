@@ -1,0 +1,40 @@
+* {
+  color-scheme: dark;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 150px;
+  background-color: hotpink;
+  padding: 20px 0px;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 300px;
+  background-color: rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
